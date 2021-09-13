@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto&display=swap');
+
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(106, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wrap {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    min-height: 200px;
+    color: #141414;
+}
+
+.title {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#form {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #fff;
+    margin-bottom: 40px;
+}
+
+#form input {
+    border: none;
+    outline: none;
+    min-height: 20px;
+}
+
+.form_button {
+    border: none;
+    outline: none;
+    background: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: rgb(36, 145, 9);
+}
+
+#list li {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.list_input {
+    display: none;
+}
+
+.list_label {
+    display: inline-block;
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    margin-right: 10px;
+    position: relative;
+}
+
+.list_label--active::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(./img/active.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 2px;
+    left: 3px;
+}
+
+.list--active {
+    text-decoration: line-through;
+    color: #3d3b3b;
+}
+
+.remove-item {
+    border: none;
+    outline: none;
+    position: relative;
+    background: none;
+    flex-basis: 100%;
+}
+
+.remove-item::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/remove.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 0;
+    top: -10px;
+    cursor: pointer;
+}
