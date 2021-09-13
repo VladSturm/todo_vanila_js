@@ -86,7 +86,7 @@ ul {
     content: '';
     width: 15px;
     height: 15px;
-    background-image: url(./img/active.svg);
+    background-image: url(./active.svg);
     background-size: contain;
     background-repeat: no-repeat;
     top: 2px;
@@ -112,7 +112,7 @@ ul {
     content: '';
     width: 20px;
     height: 20px;
-    background-image: url(./img/remove.svg);
+    background-image: url(./remove.svg);
     background-size: contain;
     background-repeat: no-repeat;
     right: 0;
